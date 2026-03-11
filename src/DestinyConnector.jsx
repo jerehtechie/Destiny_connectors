@@ -172,14 +172,14 @@ const DestinyConnector = () => {
   return (
     <div className="min-h-screen bg-gray-50 font-sans overflow-x-hidden">
       {/* Sticky Navigation */}
-      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+      <nav className="fixed sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b">
+        <div className="max-w-7xl mx-auto px-6 py-0 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-x-3">
            <img 
              src="/assets/company_logo.png" 
              alt="Destiny Connector Logo" 
-             className="h-10 w-auto object-contain" 
+             className="w-[100px] object-contain" 
           />
           </div>
 
@@ -724,7 +724,7 @@ const DestinyConnector = () => {
              <img 
   src="/assets/company_logo.png" 
   alt="Destiny Connector Logo" 
-  className="h-10 w-auto object-contain" 
+  className="w-[80px]  object-contain" 
 />
               <span className="text-3xl font-bold tracking-tighter">Destiny Connector</span>
             </div>
