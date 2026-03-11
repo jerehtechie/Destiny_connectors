@@ -63,7 +63,8 @@ const DestinyConnector = () => {
       location: 'Thika, Kiambu',
       size: '1 Acre',
       price: 'KSh 8,500,000',
-      image: 'https://images.unsplash.com/photo-1583699998579-5872a2117151?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      image: 'https://picsum.photos/id/1018/600/400',
+     
       description: 'Fertile riverside land ideal for farming and luxury homes.',
     },
     {
@@ -72,7 +73,8 @@ const DestinyConnector = () => {
       location: 'Kilifi, Coast',
       size: '1/2 Acre',
       price: 'KSh 6,750,000',
-      image: 'https://picsum.photos/id/1018/600/400',
+      image: 'https://images.unsplash.com/photo-1583699998579-5872a2117151?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      
       description: 'Beach-adjacent plots with stunning ocean views.',
     },
   ];
@@ -174,11 +176,11 @@ const DestinyConnector = () => {
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-x-3">
-            <img 
-  src="/assets/company_logo.png" 
-  alt="Destiny Connector Logo" 
-  className="h-10 w-auto object-contain" 
-/>
+           <img 
+             src="/assets/company_logo.png" 
+             alt="Destiny Connector Logo" 
+             className="h-10 w-auto object-contain" 
+          />
           </div>
 
           {/* Desktop Menu */}
@@ -283,9 +285,9 @@ const DestinyConnector = () => {
                       alt="Kenyan land"
                       className="absolute inset-0 w-full h-full object-cover"
                       initial={{ opacity: 0, scale: 1.05 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0, scale: 1.05 }}
-                      transition={{ duration: 1.2 }}
+                      animate={{ opacity: 1, scale: 1 ,x:0}}
+                      exit={{ opacity: 0, scale: 1.05,x:200}}
+                      transition={{ duration: 0.5 }}
                     />
                   )
                 ))}
@@ -308,13 +310,13 @@ const DestinyConnector = () => {
                 <div className="mt-10 flex flex-wrap justify-center gap-4">
                   <button
                     onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
-                    className="px-10 py-4 bg-white text-emerald-700 font-semibold rounded-2xl hover:shadow-xl transition"
+                    className="px-10 py-4 bg-white text-emerald-700 font-[0.5rem] rounded-2xl hover:shadow-xl transition"
                   >
                     View Projects
                   </button>
                   <button
                     onClick={() => setShowBookingModal(true)}
-                    className="px-10 py-4 border-2 border-white text-white font-semibold rounded-2xl hover:bg-white hover:text-emerald-700 transition"
+                    className="px-10 py-4 border-2 border-white text-white  rounded-2xl hover:bg-white hover:text-emerald-700 transition"
                   >
                     Book a Site Visit
                   </button>
@@ -382,13 +384,13 @@ const DestinyConnector = () => {
 
             {/* our virtures */}
             <section className="bg-white py-20 md:py-24">
-  <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-    <div className="text-center mb-12 md:mb-16">
-      <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Why Thousands Trust Us</h2>
-      <p className="mt-3 text-gray-600 text-base sm:text-lg">
-        Four reasons we stand out
-      </p>
-    </div>
+              <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+                <div className="text-center mb-12 md:mb-16">
+                  <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Why Thousands Trust Us</h2>
+                  <p className="mt-3 text-gray-600 text-base sm:text-lg">
+                    Four reasons we stand out
+                  </p>
+                </div>
 
     {/* Horizontal scroll on mobile → grid on desktop */}
     <div 
@@ -434,26 +436,26 @@ const DestinyConnector = () => {
         </motion.div>
       ))}
     </div>
-  </div>
-</section>
+              </div>
+           </section>
 
             {/* FEATURED LAND LISTINGS - horizontal scroll */}
             <section id="projects" className="py-20 md:py-24 bg-gray-50">
-  <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-6 sm:gap-0 mb-10 md:mb-12">
-      <div>
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-          Featured Land Listings
-        </h2>
-        <p className="text-gray-600 mt-2 text-base sm:text-lg">
-          Scroll horizontally to explore • All with freehold titles
-        </p>
-      </div>
-      <button
-        onClick={() => setShowBookingModal(true)}
-        className="text-emerald-600 font-medium flex items-center gap-x-2 hover:gap-x-3 transition-all whitespace-nowrap"
-      >
-        View all projects <ArrowRight className="w-5 h-5" />
+             <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-6 sm:gap-0 mb-10 md:mb-12">
+               <div>
+                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+                 Featured Land Listings
+                </h2>
+                <p className="text-gray-600 mt-2 text-base sm:text-lg">
+               Scroll horizontally to explore • All with freehold titles
+               </p>
+             </div>
+            <button
+             
+             className="text-emerald-600 font-medium flex items-center gap-x-2 hover:gap-x-3 transition-all whitespace-nowrap"
+            >
+            View all projects <ArrowRight className="w-5 h-5" />
       </button>
     </div>
 
@@ -563,14 +565,14 @@ const DestinyConnector = () => {
             <section className="py-24 bg-emerald-50">
               <div className="max-w-7xl mx-auto px-6">
                 <h2 className="text-4xl font-bold text-center mb-16">Real Stories. Real Owners.</h2>
-                <div className="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory scrollbar-hide md:grid md:grid-cols-3 md:gap-8">
+                <div className="grid md:grid-cols-3 gap-8">
                   {testimonials.map((t, i) => (
                     <motion.div
                       key={i}
                       initial={{ opacity: 0, y: 30 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: i * 0.1 }}
-                      className="bg-white p-8 rounded-3xl shadow flex-shrink-0 w-80 md:w-auto snap-center"
+                      className="bg-white p-8 rounded-3xl shadow"
                     >
                       <div className="flex gap-x-4">
                         <img src={t.image} alt={t.name} className="w-12 h-12 rounded-2xl" />
@@ -585,7 +587,6 @@ const DestinyConnector = () => {
                 </div>
               </div>
             </section>
-
             {/* VIDEO SECTION */}
             <section className="py-24 bg-white">
               <div className="max-w-5xl mx-auto px-6">
@@ -720,7 +721,11 @@ const DestinyConnector = () => {
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
           <div>
             <div className="flex items-center gap-x-3 text-white">
-              <div className="w-9 h-9 bg-emerald-600 rounded-2xl flex items-center justify-center text-2xl">DC</div>
+             <img 
+  src="/assets/company_logo.png" 
+  alt="Destiny Connector Logo" 
+  className="h-10 w-auto object-contain" 
+/>
               <span className="text-3xl font-bold tracking-tighter">Destiny Connector</span>
             </div>
             <p className="mt-6 text-sm text-gray-400">
@@ -744,7 +749,7 @@ const DestinyConnector = () => {
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/+254700123456?text=Hello%20Destiny%20Connector%21%20I'm%20interested%20in%20your%20land%20listings"
+        href="https://wa.me/+254113496760?text=Hello%20Destiny%20Connector%21%20I'm%20interested%20in%20your%20land%20listings"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-[1000] flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-xl hover:scale-110 transition-transform duration-300 animate-pulse-slow"
@@ -766,7 +771,7 @@ const DestinyConnector = () => {
               <button
                 type="button"
                 onClick={() => setShowContactModal(false)}
-                className="absolute top-5 right-6 text-gray-400 hover:text-gray-700 focus:outline-none focus:text-emerald-600 transition-colors"
+                className="absolute top-5 right-6 cursor:pointer text-gray-400 hover:text-gray-700 focus:outline-none focus:text-emerald-600 transition-colors"
                 aria-label="Close modal"
               >
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -831,7 +836,7 @@ const DestinyConnector = () => {
       {/* BOOKING MODAL */}
       <AnimatePresence>
         {showBookingModal && (
-          <div className="fixed inset-0 bg-black/70 z-[9999] flex items-center justify-center p-4">
+          <div className="fixed inset-0 bg-black/70 z-[9999] flex items-center justify-center p-4 h-90vh">
             <motion.div
               initial={{ scale: 0.88, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -844,7 +849,7 @@ const DestinyConnector = () => {
                   setShowBookingModal(false);
                   setSelectedProject(null);
                 }}
-                className="absolute top-6 right-6 text-gray-400 hover:text-gray-700 focus:outline-none focus:text-emerald-600 transition-colors"
+                className="absolute top-6 right-6 pointer text-gray-400 hover:text-gray-700 focus:outline-none focus:text-emerald-600 transition-colors"
                 aria-label="Close booking modal"
               >
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
