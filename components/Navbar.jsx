@@ -7,7 +7,7 @@ const navLinks = [
   { label: 'About Us',    page: 'about'    },
   { label: 'Diaspora',    page: 'diaspora' },
   { label: 'Our Listings',page: 'listings' },
-  { label: 'Blog',        page: 'blog'     },
+  { label: 'Blogs',        page: 'blog'     },
 ];
 
 export default function Navbar({
