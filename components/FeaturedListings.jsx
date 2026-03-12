@@ -107,7 +107,7 @@ export default function FeaturedListings({
                 </div>
 
                 <div className="p-6 lg:p-7 flex flex-col flex-grow">
-                  <h3 className="font-bold text-xl lg:text-2xl text-blue-950 mb-2 line-clamp-2 group-hover:text-blue-700 transition-colors">
+                  <h3 className="font-bold text-xl lg:text-2xl text-blue-950 mb-2 line-clamp-2  transition-colors">
                     {project.title}
                   </h3>
 
@@ -116,7 +116,7 @@ export default function FeaturedListings({
                     <span className="text-sm lg:text-base">{project.location}</span>
                   </div>
 
-                  <div className="text-2xl lg:text-3xl font-extrabold text-blue-800 mb-4">
+                  <div className="text-2xl   mb-4">
                     {project.price}
                   </div>
 

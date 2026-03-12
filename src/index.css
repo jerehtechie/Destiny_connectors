@@ -8,7 +8,9 @@
 h1,h2{
     letter-spacing: -3px;
 }
-
+h3,h4{
+    letter-spacing: -2px;
+}
 a:hover{
     cursor: pointer;
 }

@@ -68,7 +68,7 @@ export default function BlogsPage() {
     <div className="min-h-screen bg-gray-50 pt-24 pb-20">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-[30%] pointer-events-none">
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
@@ -95,10 +95,10 @@ export default function BlogsPage() {
             </p>
 
             <div className="mt-10 inline-flex flex-wrap justify-center gap-4">
-              <button className="px-8 py-4 bg-red-600 hover:bg-red-700 rounded-full text-lg font-semibold transition shadow-lg">
+              <button className="px-8 py-4 bg-red-600 hover:bg-red-700 rounded-full text-lg font-semibold transition shadow-lg cursor-pointer">
                 Contact an Expert
               </button>
-              <button className="px-8 py-4 bg-white/10 backdrop-blur-sm rounded-full text-lg font-semibold border border-white/40 hover:bg-white/20 transition">
+              <button className="px-8 py-4 bg-white/10 backdrop-blur-sm rounded-full text-lg font-semibold border border-white/40 hover:bg-white/20 transition cursor-pointer">
                 Book Site Visit
               </button>
             </div>
@@ -111,7 +111,7 @@ export default function BlogsPage() {
         <div className="max-w-7xl mx-auto px-6">
           {/* Categories */}
           <div className="flex flex-wrap gap-3 mb-12 justify-center md:justify-start">
-            <button className="px-5 py-2.5 bg-blue-700 text-white rounded-full text-sm font-medium">
+            <button className="px-5 py-2.5 bg-blue-700 text-white rounded-full text-sm font-medium cursor-pointer">
               All Topics
             </button>
             {['Diaspora Investment', 'Buyer Guides', 'Market Trends', 'Legal Insights', 'Investment Strategies'].map((cat) => (
@@ -157,9 +157,9 @@ export default function BlogsPage() {
                     </div>
                   </div>
 
-                  <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-blue-700 transition-colors">
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 line-clamp-2  transition-colors">
                     {post.title}
-                  </h2>
+                  </h3>
 
                   <p className="text-gray-600 mb-6 line-clamp-3 flex-grow">
                     {post.excerpt}
