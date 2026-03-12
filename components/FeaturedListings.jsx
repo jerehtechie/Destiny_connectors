@@ -10,7 +10,7 @@ const projects = [
     size: '1/4 Acre',
     price: 'KSh 2,499,000',
     image:
-      'https://images.unsplash.com/photo-1686358244616-aed9e9a1d827?q=80&w=774&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1594498653385-d5172c532c00?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2FyZGVufGVufDB8fDB8fHww',
     description:
       'Gated residential community with ready titles and road access.',
   },
@@ -30,7 +30,7 @@ const projects = [
     location: 'Thika, Kiambu',
     size: '1 Acre',
     price: 'KSh 8,500,000',
-    image: 'https://picsum.photos/id/1018/600/400',
+    image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description:
       'Fertile riverside land ideal for farming and luxury homes.',
   },
@@ -41,7 +41,7 @@ const projects = [
     size: '1/2 Acre',
     price: 'KSh 6,750,000',
     image:
-      'https://images.unsplash.com/photo-1583699998579-5872a2117151?q=80&w=1470&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1751725269864-4d732906d498?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description: 'Beach-adjacent plots with stunning ocean views.',
   },
 ];
@@ -69,11 +69,11 @@ export default function FeaturedListings({
             className="
               text-red-600 font-medium text-base sm:text-lg
               flex items-center gap-2 hover:gap-3 transition-all duration-300
-              hover:text-red-700
+              hover:text-red-700 cursor-pointer
             "
           >
             View all projects
-            <ArrowRight className="w-5 h-5" />
+            <ArrowRight className="w-5 h-5 " />
           </button>
         </div>
 
@@ -131,7 +131,7 @@ export default function FeaturedListings({
                       bg-red-600 hover:bg-red-700 active:bg-red-800
                       text-white font-semibold rounded-xl
                       transition-all duration-300 shadow-sm hover:shadow-md
-                      flex items-center justify-center gap-2
+                      flex items-center justify-center gap-2 cursor-pointer
                     "
                   >
                     Book Site Visit

@@ -32,7 +32,7 @@ export default function HeroInfo() {
         viewport={{ once: true }}
       >
         <img
-          src="https://images.unsplash.com/photo-1583699998579-5872a2117151?q=80&w=1470&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1709842387194-85d8756d6c44?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8TGFuZCUyMEJhbmtpbmclMjBpbiUyMEtlbnlhJTNBJTIwU21hcnQlMjBTdHJhdGVneSUyMG9yJTIwUmlza3klMjBHYW1ibGUlMjBpbiUyMDIwMjYlM0Z8ZW58MHx8MHx8fDA%3D"
           alt="Happy family on their land"
           className="rounded-3xl shadow-2xl"
         />

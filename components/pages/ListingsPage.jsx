@@ -17,7 +17,7 @@ const projects = [
     size: '1/4 Acre',
     price: 'KSh 2,499,000',
     image:
-      'https://images.unsplash.com/photo-1686358244616-aed9e9a1d827?q=80&w=774&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1594498653385-d5172c532c00?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2FyZGVufGVufDB8fDB8fHww',
     description:
       'Gated residential community with ready titles, murram roads and excellent security infrastructure.',
     type: 'residential',
@@ -39,7 +39,7 @@ const projects = [
     location: 'Thika, Kiambu',
     size: '1 Acre',
     price: 'KSh 8,500,000',
-    image: 'https://picsum.photos/id/1018/800/600',
+    image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description:
       'Fertile riverside land ideal for farming, eco-tourism lodges or luxury countryside homes.',
     type: 'agricultural',
@@ -51,7 +51,7 @@ const projects = [
     size: '1/2 Acre',
     price: 'KSh 6,750,000',
     image:
-      'https://images.unsplash.com/photo-1583699998579-5872a2117151?q=80&w=1470&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1751725269864-4d732906d498?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description:
       'Beach-adjacent plots offering stunning ocean views and strong holiday rental potential.',
     type: 'residential',
@@ -63,7 +63,7 @@ const projects = [
     size: '1/8 Acre',
     price: 'KSh 1,850,000',
     image:
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1440581572325-0bea30075d9d?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description:
       'Affordable starter plots in a fast-growing peri-urban area with ready infrastructure.',
     type: 'residential',
@@ -75,7 +75,7 @@ const projects = [
     size: '2 Acres',
     price: 'KSh 18,000,000',
     image:
-      'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1758304481561-f64520c76cd7?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description:
       'Large industrial/commercial parcels suitable for warehouses, factories or logistics hubs.',
     type: 'commercial',
@@ -87,7 +87,7 @@ const projects = [
     size: '5 Acres',
     price: 'KSh 22,500,000',
     image:
-      'https://images.unsplash.com/photo-1500384066616-8a8d547abfc9?auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1593179835737-9f82a5f30c68?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description:
       'Prime agricultural land with rich volcanic soil, water access and subdivision potential.',
     type: 'agricultural',
@@ -99,7 +99,7 @@ const projects = [
     size: '1/4 Acre',
     price: 'KSh 9,800,000',
     image:
-      'https://images.unsplash.com/photo-1515238152791-8216beabdfcb?auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1655795313382-b415f7d98fd9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8RGlhbmklMjBiZWFjaCUyMFN1bnNldCUyMFBsb3RzfGVufDB8fDB8fHww',
     description:
       'Exclusive beachfront-adjacent residential plots in one of Kenya’s most sought-after tourist destinations.',
     type: 'residential',
@@ -212,7 +212,7 @@ export default function ListingsPage({
                       text-white font-semibold rounded-xl
                       transition-all duration-300
                       flex items-center justify-center gap-2 shadow-md hover:shadow-lg
-                      text-sm md:text-base
+                      text-sm md:text-base cursor-pointer
                     "
                   >
                     Book Site Visit

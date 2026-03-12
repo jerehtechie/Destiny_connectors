@@ -3,10 +3,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 const sliderImages = [
-  'https://picsum.photos/id/1015/1920/1080',
-  'https://picsum.photos/id/1016/1920/1080',
-  'https://picsum.photos/id/1033/1920/1080',
-  'https://picsum.photos/id/1040/1920/1080',
+  'https://images.unsplash.com/photo-1709842387194-85d8756d6c44?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8TGFuZCUyMEJhbmtpbmclMjBpbiUyMEtlbnlhJTNBJTIwU21hcnQlMjBTdHJhdGVneSUyMG9yJTIwUmlza3klMjBHYW1ibGUlMjBpbiUyMDIwMjYlM0Z8ZW58MHx8MHx8fDA%3D',
+  'https://images.unsplash.com/photo-1720027068414-fff0abffeec0?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1613457231357-a5db3bc5bd81?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1663429975679-05daee9f31a2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
+  'https://images.unsplash.com/photo-1709842387288-bcebd36ce629?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1594498653385-d5172c532c00?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2FyZGVufGVufDB8fDB8fHww',
+  'https://images.unsplash.com/photo-1564590844793-c278c638d0d0?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 ];
 
 export default function HeroSlider({ onBookVisit }) {
