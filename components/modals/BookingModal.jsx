@@ -23,7 +23,7 @@ export default function BookingModal({ isOpen, onClose, selectedProject }) {
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 bg-black/70 z-[9999] flex items-start justify-center pt-20 md:pt-24 px-4 overflow-y-auto">
+        <div className="fixed inset-0 bg-black/70 z-[1000] flex items-start justify-center pt-20 md:pt-24 px-4 overflow-y-auto">
           <motion.div
             initial={{ scale: 0.92, opacity: 0, y: 40 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
@@ -32,13 +32,13 @@ export default function BookingModal({ isOpen, onClose, selectedProject }) {
             className="
               bg-white w-full max-w-lg sm:max-w-xl rounded-3xl
               overflow-hidden relative shadow-2xl
-              max-h-[calc(100vh-8rem)] overflow-y-auto
+              max-h-[calc(100vh-8rem)] overflow-y-auto 
             "
           >
             {/* Close button – make it sticky if content is long */}
             <button
               onClick={onClose}
-              className="sticky top-4 right-4 z-10 float-right mr-4 mt-4 text-gray-500 hover:text-gray-800 bg-white/80 rounded-full p-1.5 backdrop-blur-sm"
+              className="sticky top-4 right-4 z-10 float-right mr-4 mt-4 text-gray-500 hover:text-gray-800 bg-white/80 rounded-full p-1.5 backdrop-blur-sm cursor-pointer"
               aria-label="Close modal"
             >
               <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -103,7 +103,7 @@ export default function BookingModal({ isOpen, onClose, selectedProject }) {
                 className="
                   w-full py-4 mt-2 bg-red-600 hover:bg-red-700 
                   text-white font-semibold rounded-2xl 
-                  transition duration-300 shadow-md hover:shadow-lg
+                  transition duration-300 shadow-md hover:shadow-lg cursor-pointer
                 "
               >
                 Confirm Booking Request

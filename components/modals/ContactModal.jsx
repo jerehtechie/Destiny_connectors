@@ -23,7 +23,7 @@ export default function ContactModal({ isOpen, onClose }) {
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 bg-black/70 z-[9999] flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-black/70 z-[1000] flex items-center justify-center p-4">
           <motion.div
             initial={{ scale: 0.88, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -32,7 +32,7 @@ export default function ContactModal({ isOpen, onClose }) {
           >
             <button
               onClick={onClose}
-              className="absolute top-5 right-6 text-gray-400 hover:text-gray-700"
+              className="absolute top-5 right-6 text-gray-400 hover:text-gray-700 cursor-pointer"
             >
               <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
@@ -49,7 +49,7 @@ export default function ContactModal({ isOpen, onClose }) {
               <input name="email" type="email" value={form.email} onChange={handleChange} placeholder="Email Address" required className="w-full border rounded-2xl px-6 py-4 focus:border-emerald-600" />
               <input name="phone" type="tel" value={form.phone} onChange={handleChange} placeholder="Phone Number (+254...)" required className="w-full border rounded-2xl px-6 py-4 focus:border-emerald-600" />
               <textarea name="message" value={form.message} onChange={handleChange} placeholder="How can we help you today?" rows={4} required className="w-full border rounded-2xl px-6 py-4 focus:border-emerald-600 resize-none" />
-              <button type="submit" className="w-full py-5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-2xl transition">
+              <button type="submit" className="w-full py-5 bg-red-500 hover:bg-red-700 text-white font-semibold rounded-2xl transition cursor-pointer">
                 Send Message
               </button>
             </form>

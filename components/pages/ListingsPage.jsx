@@ -195,7 +195,7 @@ export default function ListingsPage({
                   </div>
 
                   <div className="flex items-center justify-between mb-5">
-                    <div className="text-2xl md:text-3xl font-extrabold text-blue-800">
+                    <div className="text-2xl md:text-3xl ">
                       {project.price}
                     </div>
                   </div>
