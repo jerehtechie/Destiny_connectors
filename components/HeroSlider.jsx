@@ -23,7 +23,7 @@ export default function HeroSlider({ onBookVisit }) {
   }, []);
 
   return (
-    <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
       <AnimatePresence mode="wait">
         {sliderImages.map((img, idx) => (
           idx === currentSlide && (
@@ -48,9 +48,9 @@ export default function HeroSlider({ onBookVisit }) {
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.3 }}
-          className="text-5xl md:text-7xl font-bold text-white leading-none tracking-tighter"
+          className="text-5xl md:text-7xl font-bold text-white leading-none tracking-tighter "
         >
-          Your Dream Land<br />Awaits in Kenya
+          <p className='pt-6'>Your Dream Land<br />Awaits in Kenya</p>
         </motion.h1>
         <p className="mt-6 text-xl text-white/90 max-w-lg mx-auto">
           Leading land seller with titled plots, flexible payments, and trusted by thousands.
@@ -64,16 +64,15 @@ export default function HeroSlider({ onBookVisit }) {
           </button>
           <button
             onClick={onBookVisit}
-            className="px-10 py-4 border-2 border-white text-white rounded-2xl hover:bg-white hover:text-red-700 transition cursor-pointer"
+            className="px-8 py-4 border-2 border-white text-white rounded-2xl hover:bg-white hover:text-red-700 transition cursor-pointer"
           >
             Book a Site Visit
           </button>
         </div>
       </div>
 
-      {/* Controls: arrows + dots on the same line, centered */}
-      <div className="absolute bottom-4 sm:bottom-12 left-0   right-0 z-20 flex items-center justify-center gap-6 sm:gap-10 md:gap-12">
-        {/* Left Arrow */}
+      
+      <div className="absolute bottom-0 sm:bottom-12 left-0   right-0 z-20 flex items-center justify-center gap-6 sm:gap-10 md:gap-12">
         <button
           onClick={() => setCurrentSlide((prev) => (prev - 1 + sliderImages.length) % sliderImages.length)}
           className="

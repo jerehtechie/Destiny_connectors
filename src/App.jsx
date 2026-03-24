@@ -4,7 +4,7 @@ import DestinyConnector from './DestinyConnector';
 const App = () => {
   return (
     <div>
-      <p>HELLO WORLD</p>
+      
      <DestinyConnector />  
     </div>
   )

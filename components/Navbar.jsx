@@ -71,7 +71,7 @@ export default function Navbar({
           <button
             onClick={() => setShowBookingModal(true)}
             className="
-              flex items-center gap-2 px-6 sm:px-7 py-3 text-sm sm:text-base
+              flex items-center gap-2 px-6 sm:px-7 py-3  text-sm sm:text-base
               font-semibold bg-red-600 text-white rounded-xl
               hover:bg-red-700 active:bg-red-800
               shadow-md hover:shadow-lg transition-all duration-200
